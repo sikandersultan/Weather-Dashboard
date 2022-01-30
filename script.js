@@ -42,7 +42,7 @@ searchButton.click(function(){
                 threeHourProblem.forEach(function (i) {
                     var fiveDayDate = new Date(response.list[i].dt * 1000)
                     fiveDayDate = fiveDayDate.toLocaleDateString()
-                    // fiveDayHTML.append("<div class=fiveDayColor>" + "<p>" + fiveDayDate + "</p>" + `<img src="https://openweathermap.org/img/wn/${response.list[i].weather[0].icon}@2x.png">` + "<p>")
+                    fiveDayHTML.append("<div class=fiveDayColor>" + "<p>" + fiveDayDate + "</p>" + `<img src="https://openweathermap.org/img/wn/${response.list[i].weather[0].icon}@2x.png">` + "<p>")
                     fiveDayHTML.append("<p>" + "Temperature: " + response.list[i].main.temp + "</p>")
                     fiveDayHTML.append("<p>" + "Humidity: " + response.list[i].main.humidity + "%" + "</p>" + "</div>")
 

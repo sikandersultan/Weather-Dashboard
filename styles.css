@@ -1,20 +1,12 @@
-body {
-    font-family: "Open Sans", sans-serif;
-  }
-  
-.heading {
-    background-color: #3c3c3c;
-    color: #ffffff;
-    text-align: center;
-    padding: 10px;
-  }
+.fiveDayColor {
+  padding: 20px;
+  background-color: #1E90FF;
+  color: white;
+  float: middle;
+  margin: 50px;
+  border: 1px solid lightgray;
 
-  .fiveDayColor {
-    padding: 20px;
-    background-color: blue;
-    color: white;
-    float: left;
-    margin: 10px;
-    border: 1px solid lightgray;
-
+}
+.card-title {
+  font-size: 15px;
 }
