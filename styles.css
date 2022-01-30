@@ -9,4 +9,12 @@ body {
     padding: 10px;
   }
 
-  
+  .fiveDayColor {
+    padding: 20px;
+    background-color: blue;
+    color: white;
+    float: left;
+    margin: 10px;
+    border: 1px solid lightgray;
+
+}
