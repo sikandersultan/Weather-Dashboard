@@ -31,6 +31,14 @@ searchButton.click(function(){
             currentTemp.append("<p>" + "Temperature: " + response.main.temp + "</p>")
             currentTemp.append("<p>" + "Humidity: " + response.main.humidity + "%" + "</p>")
             currentTemp.append("<p>" + "Wind Speed: " + response.wind.speed + "</p>")
+            var ultraViolet = `https://api.openweathermap.org/data/2.5/uvi?appid=7526abf0fdb81c40132651ed95247307&lat=${response.coord.lat}&lon=${response.coord.lon}`
+            $.ajax({
+                url: ultraViolet,
+                method: "GET"
+            }).then(function(response){
+                var uv = currentTemp.append("<p>" + "UV Index: " + response.value + "</p>").addClass("card-text")
+                currentTemp.append(uv)
+            })
 
             $.ajax({
                 url: fiveDays,
